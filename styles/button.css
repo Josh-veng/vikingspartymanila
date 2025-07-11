@@ -1,0 +1,36 @@
+.button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.button.brand {
+    background-color: transparent;
+    transition: opacity 300ms;
+}
+
+.button.brand:hover {
+    opacity: .9;
+}
+
+.button.brand img {
+    width: 68px;
+    height: 68px;
+}
+
+.button.cta {
+    background-color: var(--primary-red);
+    color: var(--primary-white);
+    padding: 20px 24px;
+    border-radius: 8px;
+    font-family: 'Norse', sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 500;
+}

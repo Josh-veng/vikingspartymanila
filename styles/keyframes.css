@@ -1,0 +1,15 @@
+@keyframes splash {
+    0% {
+        opacity: 100%;
+        z-index: 2;
+    }
+    99% {
+        opacity: 0.1%;
+        z-index: 2;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+        z-index: -1;
+    }
+}

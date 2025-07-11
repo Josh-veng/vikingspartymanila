@@ -1,0 +1,267 @@
+
+.hero {
+    min-height: calc(100vh - 107px);
+    width: 100vw;
+    padding: 16px;
+}
+
+.hero .content {
+    min-height: calc(100vh - 107px);
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+}
+
+.hero .content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-image {
+    width: 25em;
+    height: 25em;
+    margin-top: 2.5em;
+}
+
+.event-description {
+    font-family: 'Norse', sans-serif;
+    color: var(--secondary-white);
+    text-transform: capitalize;
+    text-align: center;
+
+    font-size: 2em;
+    line-height: 1.4em;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+/* Sponsors style */
+
+#sponsors {
+    background-color: #000; /* black background */
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 3em;
+}
+  
+#sponsors h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px !important;
+}
+  
+.sponsor-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* allow wrapping on small screens */
+    gap: 10px; /* space between images */
+}
+  
+.sponsor-logos img {
+    height: 240px; /* big logos! */
+    width: 300px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+  
+.sponsor-logos img:hover {
+    transform: scale(1.08);
+}
+
+/* Tickets style */
+
+#spartan-tickets {
+    background-color: #000;
+    padding: 80px 20px 60px; /* increased top padding to avoid overlap */
+    text-align: center;
+    margin-top: 3em;
+}
+  
+#spartan-tickets h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px !important;
+}
+  
+.spartan-ticket-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+    overflow: visible; /* <-- allows cards to grow outside */
+    margin-bottom: 20px;
+}
+  
+.spartan-ticket-row::-webkit-scrollbar {
+    display: none;
+}
+  
+.spartan-ticket-row {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+  
+.spartan-ticket-card {
+    background: linear-gradient(145deg, #222, #111);
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    flex: 0 0 260px; /* fixed width per card */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 
+  rgba(255, 0, 0, 0.3) 0px 10px 20px, 
+  rgba(0, 0, 0, 0.6) 0px 25px 50px -12px;
+    transform-origin: center; /* center scaling origin */
+}
+  
+.spartan-ticket-card:hover {
+    transform: translateY(-5px) scale(1.02); /* less vertical move to avoid overlap */
+    border-color: red;
+}
+  
+.spartan-ticket-section img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+  
+.spartan-ticket-section span {
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Norse', sans-serif;
+    letter-spacing: 3px;
+}
+  
+.spartan-ticket-section a {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background: linear-gradient(145deg, #333, #111);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: 'Norse', sans-serif;
+}
+  
+.spartan-ticket-section a:hover {
+    background: linear-gradient(145deg, #555, #222);
+    color: red;
+    border-color: red;
+    transform: scale(1.05);
+}
+
+/* Side Menu style */
+  
+.spartan-header {
+    display: flex;
+    justify-content: space-between; /* left & right sides */
+    align-items: center;
+    width: 100%;
+    position: relative; /* stays in flow, not absolute */
+    z-index: 10;
+}
+  
+#menu-button.spartan-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.3s ease;
+}
+  
+#menu-button.spartan-button img {
+    height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+  
+#menu-button.spartan-button:hover img,
+#menu-button.spartan-button.active img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px red);
+}
+  
+#buy-tickets-button.button.cta {
+    animation: spartan-shake 2.5s ease-in-out infinite;
+    padding: 14px 30px;
+    background: linear-gradient(145deg, #333, #111);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+  
+#buy-tickets-button.button.cta:hover {
+    background: linear-gradient(145deg, #555, #222);
+    color: red;
+    border-color: red;
+}
+  
+#spartan-side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100%;
+    border-right: 3px solid red;
+    padding-top: 80px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9;
+    margin-top: 30px;
+}
+  
+#spartan-side-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+    font-family: 'Norse', sans-serif;
+    letter-spacing: 3px;
+}
+  
+#spartan-side-menu a:hover {
+    color: red;
+    border-left: 4px solid red;
+    background: rgba(255, 255, 255, 0.05);
+}
+  
+#spartan-side-menu.open {
+    transform: translateX(0);
+}
+
+/* Buy Ticket animation */
+@keyframes spartan-shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-3px) rotate(-1deg); }
+    20% { transform: translateX(3px) rotate(1deg); }
+    30% { transform: translateX(-2px) rotate(-1deg); }
+    40% { transform: translateX(2px) rotate(1deg); }
+    50% { transform: translateX(-1px); }
+    60%, 100% { transform: translateX(0); }
+}

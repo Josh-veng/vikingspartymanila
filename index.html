@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      href="assets/icons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="assets/icons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+    <title>The Vikings</title>
+  </head>
+  <body class="bg-dark">
+    <div class="splash" id="splash-component">
+      <img src="assets/svg/svg-the-viking-helmet-logo.svg" alt="Splash Image" />
+    </div>
+    <nav>
+      <div class="navbar">
+        <header class="spartan-header">
+          <button id="menu-button" class="spartan-button">
+            <img
+              src="assets/svg/svg-the-viking-helmet-logo.svg"
+              alt="The Viking Helmet Logo"
+            />
+          </button>
+        
+          <a id="buy-tickets-button" href="#spartan-tickets" class="button cta">
+            Buy Tickets Now!
+          </a>
+        </header>
+        
+        <nav id="spartan-side-menu" class="closed">
+          <a href="#home">The Vikings</a>
+          <a href="#tickets">Manila Viking Party</a>
+          <a href="#sponsors">Merchandize</a>
+          <a href="#spartan-tickets">Tickets</a>
+          <a href="#sponsors">Sponsorships</a>
+          <a href="#contact">Nordchaa Philippines</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+      </div>
+    </nav>
+    <main>
+      <section id="viking-party-manila" class="hero">
+        <div class="content">
+          <div>
+            <img
+              src="assets/svg/svg-viking-party-manila.svg"
+              alt="Viking Party Manila SVG Image"
+              class="event-image"
+            />
+            <br />
+            <br />
+            <p class="event-description">
+              September 13 2025, 6PM<br />
+              Dusit Thani Manila,<br />
+              Philippines
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- <section id="page-three" class="hero mockup">
+        <div class="content">
+          <h2>Page 3</h2>
+        </div>
+      </section> -->
+      
+      <!-- <section id="page-five" class="hero mockup">
+        <div class="content">
+          <h2>Page 5</h2>
+        </div>
+      </section>
+      <section id="page-six" class="hero mockup">
+        <div class="content">
+          <h2>Page 6</h2>
+        </div>
+      </section>
+      <section id="page-7" class="hero mockup">
+        <div class="content">
+          <h2>Page 7</h2>
+        </div>
+      </section> -->
+      <section id="spartan-tickets" class="spartan-hero">
+        <div class="spartan-content">
+          <h2>Tickets</h2>
+          <div class="spartan-ticket-row">
+            <div class="spartan-ticket-card">
+              <div class="spartan-ticket-section">
+                <img src="assets/svg/svg-pre-sale-ticket.svg" alt="Pre-sale Ticket Helmet Logo" />
+                <span>Pre-sale Ticket <br/>&#8369;4,800</span>
+              </div>
+              <div class="spartan-ticket-section">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+            <div class="spartan-ticket-card">
+              <div class="spartan-ticket-section">
+                <img src="assets/svg/svg-ordinary-ticket.svg" alt="Ordinary Ticket Helmet Logo" />
+                <span>Ordinary Ticket <br/>&#8369;5,100</span>
+              </div>
+              <div class="spartan-ticket-section">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+            <div class="spartan-ticket-card">
+              <div class="spartan-ticket-section">
+                <img src="assets/svg/svg-vip-ticket.svg" alt="VIP Ticket Helmet Logo" />
+                <span>VIP Ticket <br/>&#8369;5,500</span>
+              </div>
+              <div class="spartan-ticket-section">
+                <a href="">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sponsors">
+        <div class="content">
+          <h2>Our Sponsors</h2>
+          <div class="sponsor-logos">
+            <img src="assets/sponsors/bdo.png" alt="BDO Unibank (Mug Sponsor)">
+            <img src="assets/sponsors/dusitthani.png" alt="Dusit Thani Manila (Venue Partner)">
+            <img src="assets/sponsors/engkanto.png" alt="Engkanto Brewery (Beer Sponsor)">
+            <img src="assets/sponsors/thewineclub.png" alt="The Wine Club (Wine Sponsor)">
+          </div>
+        </div>
+      </section>
+      <!-- <section id="page-9" class="hero mockup">
+        <div class="content">
+          <h2>Page 9</h2>
+        </div>
+      </section>
+      <section id="page-10" class="hero mockup">
+        <div class="content">
+          <h2>Page 10</h2>
+        </div>
+      </section> -->
+    </main>
+
+    <script>
+      const menuButton = document.getElementById('menu-button');
+      const sideMenu = document.getElementById('spartan-side-menu');
+      const navLinks = sideMenu.querySelectorAll('a');
+
+      menuButton.addEventListener('click', () => {
+        sideMenu.classList.toggle('open');
+        menuButton.classList.toggle('active', sideMenu.classList.contains('open'));
+      });
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          sideMenu.classList.remove('open');
+          menuButton.classList.remove('active');
+        });
+      });
+    </script>
+  </body>
+</html>
