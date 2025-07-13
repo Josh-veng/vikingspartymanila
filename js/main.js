@@ -2,8 +2,7 @@ import { DropdownObject, SplashObject } from "./objects.js";
 import { Observer } from "./objects/observer.js";
 document.addEventListener("DOMContentLoaded", (e) => {
   const { toggleDropdown } = DropdownObject;
-  const { initSplash } = SplashObject;
-  initSplash();
+
   // elements init
   const menuButtonComponent = document.querySelector("#menu-button");
   const dropdownMenuLink = document.querySelectorAll(".dropdown-menu-item a");

@@ -1,4 +1,18 @@
 
+@font-face {
+  font-family: 'RingoldBold';
+  src: url('../assets/fonts/fonnts.com-Ringold_Sans.otf') format('opentype');
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RingoldLight';
+  src: url('../assets/fonts/fonnts.com-Ringold_Sans.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
 .hero {
     min-height: calc(100vh - 107px);
     width: 100vw;
@@ -28,21 +42,31 @@
 }
 
 .event-description {
-    font-family: 'Norse', sans-serif;
+    font-family: 'RingoldBold', sans-serif;
     color: var(--secondary-white);
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
-
-    font-size: 2em;
+    font-size: 2.1em;
     line-height: 1.4em;
-    letter-spacing: 3px;
-    font-weight: 100;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.company-logo-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.company-logo {
+  max-width: 170px; /* adjust as needed */
+  width: 100%;
+  height: auto;
 }
 
 /* Sponsors style */
 
 #sponsors {
-    background-color: #000; /* black background */
+    background-color: transparent; /* black background */
     padding: 40px 20px;
     text-align: center;
     margin-top: 3em;
@@ -78,7 +102,7 @@
 /* Tickets style */
 
 #spartan-tickets {
-    background-color: #000;
+    background-color: transparent;
     padding: 80px 20px 60px; /* increased top padding to avoid overlap */
     text-align: center;
     margin-top: 3em;
@@ -236,12 +260,12 @@
     color: #fff;
     text-decoration: none;
     padding: 15px 20px;
-    font-size: 1.1rem;
+    font-size: .9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s ease;
     border-left: 4px solid transparent;
-    font-family: 'Norse', sans-serif;
+    font-family: "Runestone W01 Regular";
     letter-spacing: 3px;
 }
   

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'RingoldLight';
+  src: url('../assets/fonts/fonnts.com-Ringold_Sans.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
 .button {
     outline: none;
     border: none;
@@ -28,9 +35,8 @@ a.button {
     color: var(--primary-white);
     padding: 20px 24px;
     border-radius: 8px;
-    font-family: 'Norse', sans-serif;
+    font-family: 'RingoldLight', sans-serif;
     font-size: 18px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 500;
 }
