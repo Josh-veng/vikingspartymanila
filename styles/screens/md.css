@@ -67,16 +67,10 @@
         color: var(--primary-white);
         padding: 15px 17px;
         border-radius: 8px;
-        font-family: 'Norse', sans-serif;
         font-size: 16px;
-        text-transform: capitalize;
+        text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 500;
-    }
-
-    .spartan-ticket-row {
-        flex-direction: column;
-        gap: 20px;
     }
 
     #spartan-side-menu { 
@@ -88,5 +82,12 @@
 
     #button cta {
         z-index: 7;
+    }
+
+    .about-contact-container {
+        flex-direction: column;
+    }
+    .about-contact-separator {
+        display: none;
     }
 }
