@@ -66,37 +66,48 @@
 /* Sponsors style */
 
 #sponsors {
-    background-color: transparent; /* black background */
-    padding: 40px 20px;
-    text-align: center;
-    margin-top: 10rem;
+  background-color: transparent;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 10rem;
 }
-  
+
 .sponsor-title-image {
-  max-width: 300px; /* Adjust width as needed */
+  max-width: 300px;
   width: 100%;
   height: auto;
-  margin: 0 auto 10px auto; /* center + spacing below */
+  margin: 0 auto 78px auto;
   display: block;
 }
-  
+
 .sponsor-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* allow wrapping on small screens */
-    gap: 10px; /* space between images */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-  
-.sponsor-logos img {
-    height: 240px; /* big logos! */
-    width: 300px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+
+.sponsor-logo-box {
+  width: 270px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05); /* Optional subtle bg */
+  border-radius: 8px;
+  overflow: hidden;
 }
-  
-.sponsor-logos img:hover {
-    transform: scale(1.08);
+
+.sponsor-logo-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.sponsor-logo-box img:hover {
+  transform: scale(1.08);
 }
 
 /* Tickets style */
@@ -105,7 +116,7 @@
   max-width: 170px; /* Adjust width as needed */
   width: 100%;
   height: auto;
-  margin: 0 auto 30px auto; /* center + spacing below */
+  margin: 0 auto 78px auto; /* center + spacing below */
   display: block;
 }
 
@@ -132,7 +143,7 @@
 
 .ticket-image {
   width: 100%;
-  height: 300px;
+  height: 380px;
   object-fit: cover;
   display: block;
 }
@@ -249,6 +260,13 @@
   
 #spartan-side-menu.open {
     transform: translateX(0);
+}
+
+.disabled-link {
+  color: gray !important;
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 /* Buy Ticket animation */
