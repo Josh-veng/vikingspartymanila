@@ -402,6 +402,27 @@
   display: block;
 }
 
+.video-gallery-description {
+  max-width: 1200px;
+  margin: 0 auto 50px auto; /* Center the whole block */
+  font-size: 1rem;
+  line-height: 1.8;
+  padding: 0 20px;
+}
+
+.video-gallery-description h2 {
+  font-size: 1.6rem;
+  color: #cc0000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center; /* Just the title is centered */
+}
+
+.video-gallery-description p {
+  text-align: justify; /* Justifies paragraph text */
+  margin-bottom: 15px;
+}
+
 .video-row {
   display: flex;
   justify-content: center;
