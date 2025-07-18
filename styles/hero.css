@@ -466,3 +466,17 @@
   pointer-events: none;
   border-radius: 14px;
 }
+
+/* Disabled card styling */
+.spartan-ticket-card.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Optional: make the button visibly disabled */
+.buy-now-btn.disabled-link {
+  background-color: #ccc;
+  color: #777;
+  cursor: not-allowed;
+  pointer-events: none;
+}
