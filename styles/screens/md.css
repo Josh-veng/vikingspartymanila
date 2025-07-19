@@ -90,4 +90,8 @@
     .about-contact-separator {
         display: none;
     }
+    .viking-text {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 }

@@ -113,7 +113,7 @@
 /* Tickets style */
 
 .tickets-title-image {
-  max-width: 170px; /* Adjust width as needed */
+  max-width: 240px; /* Adjust width as needed */
   width: 100%;
   height: auto;
   margin: 0 auto 78px auto; /* center + spacing below */
@@ -402,12 +402,16 @@
   display: block;
 }
 
-.video-gallery-description {
-  max-width: 1200px;
-  margin: 0 auto 50px auto; /* Center the whole block */
-  font-size: 1rem;
+.viking-text {
+  width: 100%;         /* Controls width */
+  margin: 0 auto;           /* Centers the block */
+  text-align: justify;      /* Aligns text left & right */
+  color: #fff;              /* White text (adjust as needed) */
+  font-size: 1.1rem;        /* Adjust size as needed */
   line-height: 1.8;
-  padding: 0 20px;
+  padding-left: 8em;
+  padding-right: 8em;
+  margin-bottom: 20px;
 }
 
 .video-gallery-description h2 {
@@ -419,8 +423,12 @@
 }
 
 .video-gallery-description p {
-  text-align: justify; /* Justifies paragraph text */
-  margin-bottom: 15px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1rem;
+  padding-bottom: 20px;
 }
 
 .video-row {
@@ -479,4 +487,70 @@
   color: #777;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+/* Merch */
+
+.merch-section {
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Cinzel', serif; /* Optional: Use Google Fonts */
+  margin-top: 10rem;
+}
+
+.merch-title-image {
+  max-width: 300px; /* Adjust width as needed */
+  width: 100%;
+  height: auto;
+  margin: 0 auto 78px auto; /* center + spacing below */
+  display: block;
+}
+
+.merch-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.merch-item {
+  background-color: #2a2a2a;
+  border: 2px solid #444;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 15px rgba(204, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.merch-item:hover {
+  transform: scale(1.05);
+  border-color: #cc0000;
+}
+
+.merch-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.merch-item a {
+    text-decoration: none;
+}
+
+.merch-item h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #ff3333;
+  font-weight: bold;
 }
