@@ -1,96 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/druk-wide-bold" rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/76046362db5cca5894850dd668aae6f2?family=Runestone+W01+Regular" rel="stylesheet">
 
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="icon" href="favicon.ico" sizes="any" />
-    <link
-      rel="icon"
-      href="assets/icons/favicon-32x32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="assets/icons/favicon-16x16.png"
-      sizes="16x16"
-      type="image/png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/druk-wide-bold" rel="stylesheet">
+  <link href="https://db.onlinewebfonts.com/c/76046362db5cca5894850dd668aae6f2?family=Runestone+W01+Regular"
+    rel="stylesheet">
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
-    <title>The Vikings</title>
-  </head>
-  <body class="bg-dark">
-    <div class="splash" id="splash-component">
-      <img src="assets/svg/svg-the-viking-helmet-logo.svg" alt="Splash Image" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/icons/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="assets/icons/favicon-16x16.png" sizes="16x16" type="image/png" />
+
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <title>The Vikings</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17380375029"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-17380375029');
+  </script>
+</head>
+
+<body class="bg-dark">
+  <div class="splash" id="splash-component">
+    <img src="assets/svg/svg-the-viking-helmet-logo.svg" alt="Splash Image" />
+  </div>
+  <nav>
+    <div class="navbar">
+      <header class="spartan-header">
+        <button id="menu-button" class="spartan-button">
+          <img src="assets/svg/svg-the-viking-helmet-logo.svg" alt="The Viking Helmet Logo" />
+        </button>
+
+        <a id="buy-tickets-button"
+          href="https://vikingpartymanila.yapsody.com/event/index/851111/NordCham-Viking-Party-Manila" target="_blank"
+          class="button cta">
+          Get Your Party Pass Now!!
+        </a>
+      </header>
+
+      <nav id="spartan-side-menu" class="closed">
+        <a href="#the-vikings">The Vikings</a>
+        <a href="#video-gallery">Viking Party Manila</a>
+        <a href="#merchandize">Merchandize</a>
+        <a href="#spartan-tickets">Party Pass</a>
+        <a href="#sponsorships">Sponsorships</a>
+        <a href="#contactus">Nordcham Philippines</a>
+        <a href="#contactus">Contact Us</a>
+      </nav>
     </div>
-    <nav>
-      <div class="navbar">
-        <header class="spartan-header">
-          <button id="menu-button" class="spartan-button">
-            <img
-              src="assets/svg/svg-the-viking-helmet-logo.svg"
-              alt="The Viking Helmet Logo"
-            />
-          </button>
-        
-          <a id="buy-tickets-button" href="https://vikingpartymanila.yapsody.com/event/index/851111/NordCham-Viking-Party-Manila" target="_blank" class="button cta">
-            Get Your Party Pass Now!!
-          </a>
-        </header>
-        
-        <nav id="spartan-side-menu" class="closed">
-          <a href="#" class="disabled-link">The Vikings</a>
-          <a href="#video-gallery">Viking Party Manila</a>
-          <a href="#merchandize">Merchandize</a>
-          <a href="#spartan-tickets">Party Pass</a>
-          <a href="#" class="disabled-link">Sponsorships</a>
-          <a href="#contactus">Nordchaa Philippines</a>
-          <a href="#contactus">Contact Us</a>
-        </nav>
-      </div>
-    </nav>
-    <main>
-      <section id="viking-party-manila" class="hero">
-        <div class="content">
-          <div>
-            <img
-              src="assets/svg/svg-viking-party-manila.svg"
-              alt="Viking Party Manila SVG Image"
-              class="event-image"
-            />
-            <br />
-            <br />
-            <p class="event-description">
-              September 13 2025, 6PM<br />
-              Dusit Thani Manila,<br />
-              Philippines
-            </p>
+  </nav>
+  <main>
+    <section id="viking-party-manila" class="hero">
+      <div class="content">
+        <div>
+          <img src="assets/svg/svg-viking-party-manila.svg" alt="Viking Party Manila SVG Image" class="event-image" />
+          <br />
+          <br />
+          <img src="assets/svg/event-details-01.svg" alt="Event Details" class="event-details">
 
-            <!-- Company logo below -->
-            <div class="company-logo-container">
-              <img
-                src="assets/png/White.png"
-                alt="Company Logo"
-                class="company-logo"
-              />
-            </div>
+          <!-- Company logo below -->
+          <div class="company-logo-container">
+            <img src="assets/png/White.png" alt="Company Logo" class="company-logo" />
           </div>
         </div>
-      </section>
-      <!-- <section id="page-three" class="hero mockup">
+      </div>
+    </section>
+    <!-- <section id="page-three" class="hero mockup">
         <div class="content">
           <h2>Page 3</h2>
         </div>
       </section> -->
-      
-      <!-- <section id="page-five" class="hero mockup">
+
+    <!-- <section id="page-five" class="hero mockup">
         <div class="content">
           <h2>Page 5</h2>
         </div>
@@ -106,164 +97,298 @@
         </div>
       </section> -->
 
-      <section id="video-gallery">
-        <div class="video-gallery-content">
-          <!-- Section title as image -->
-          <img
-            src="assets/svg/manila viking party-01.svg"
-            alt="Video Gallery"
-            class="video-gallery-title"
-          />
+    <section id="video-gallery">
+      <div class="video-gallery-content">
+        <!-- Section title as image -->
+        <img src="assets/svg/viking party manila-01.svg" alt="Video Gallery" class="video-gallery-title" />
+        <div class="row-carousel-wrapper">
+          <button class="row-carousel-btn prev">&#10094;</button>
+          <div class="row-carousel" id="carousel-track">
+            <img src="assets/carousel/1.jpg" alt="Viking Image 1" />
+            <img src="assets/carousel/2.jpg" alt="Viking Image 2" />
+            <img src="assets/carousel/3.jpg" alt="Viking Image 3" />
+            <img src="assets/carousel/4.jpg" alt="Viking Image 4" />
+            <img src="assets/carousel/5.jpg" alt="Viking Image 5" />
+            <img src="assets/carousel/6.jpg" alt="Viking Image 6" />
+            <img src="assets/carousel/7.jpg" alt="Viking Image 7" />
+            <img src="assets/carousel/8.jpg" alt="Viking Image 8" />
+            <img src="assets/carousel/9.jpg" alt="Viking Image 9" />
+            <img src="assets/carousel/10.jpg" alt="Viking Image 10" />
+            <img src="assets/carousel/11.jpg" alt="Viking Image 11" />
+            <img src="assets/carousel/12.jpg" alt="Viking Image 12" />
+            <img src="assets/carousel/13.jpg" alt="Viking Image 13" />
+            <img src="assets/carousel/14.jpg" alt="Viking Image 14" />
+            <img src="assets/carousel/15.jpg" alt="Viking Image 15" />
+            <img src="assets/carousel/16.jpg" alt="Viking Image 16" />
+            <img src="assets/carousel/17.jpg" alt="Viking Image 17" />
+            <img src="assets/carousel/18.jpg" alt="Viking Image 18" />
+            <img src="assets/carousel/19.jpg" alt="Viking Image 19" />
+            <img src="assets/carousel/20.jpg" alt="Viking Image 20" />
+            <img src="assets/carousel/21.jpg" alt="Viking Image 21" />
+            <img src="assets/carousel/22.jpg" alt="Viking Image 22" />
+            <img src="assets/carousel/23.jpg" alt="Viking Image 23" />
+            <img src="assets/carousel/24.jpg" alt="Viking Image 24" />
+            <img src="assets/carousel/25.jpg" alt="Viking Image 25" />
+            <img src="assets/carousel/26.jpg" alt="Viking Image 26" />
+            <img src="assets/carousel/27.jpg" alt="Viking Image 27" />
+            <img src="assets/carousel/28.jpg" alt="Viking Image 28" />
+            <img src="assets/carousel/29.jpg" alt="Viking Image 29" />
+            <img src="assets/carousel/30.jpg" alt="Viking Image 30" />
+            <img src="assets/carousel/31.jpg" alt="Viking Image 31" />
+            <img src="assets/carousel/32.jpg" alt="Viking Image 32" />
+            <img src="assets/carousel/33.jpg" alt="Viking Image 33" />
+            <img src="assets/carousel/34.jpg" alt="Viking Image 34" />
+          </div>
+          <button class="row-carousel-btn next">&#10095;</button>
+        </div>
 
-          <section class="viking-columns">
-            <div class="viking-row">
-              <div class="viking-col">
-                <h2>VIKING PARTY MANILA</h2>
-                <p>The Viking Party Manila is a one of a kind evening of fun, food, music and dance, arranged by NordCham Philippines in celebration of our Nordic heritage and our Viking roots. The event is a casual party to which anyone is welcome. Come dressed up in your favorite Viking attire or come as you are. Party program includes Viking-themed entertainment from stage, live music, rich servings of great Nordic food and free-flowing beers of highest quality and quantity.</p>
-              </div>
-              <div class="viking-col">
-                <h2>EAT AND DRINK LIKE A VIKING</h2>
-                <p>Indulge in a feast of delicatessen from the Nordic countries! Dusit Hotel, one of the best culinary destinations in Manila, invites everyone to the taste of Nordic Food at a overflowing buffet table. For the real Valhalla experience, Engkanto Brewery is providing free-flowing beer all night long! Engkanto is known to brew one of the best beers in the Philippines. Unlimited beer is included in the Viking Party Pass. A selection of fine Wines and Mixed Drinks will be available at cash bars around the event area.</p>
-              </div>
-            </div>
+        <div class="vikings-party-section">
+          <div class="vikings-party-details">
+            <h2>VIKING PARTY MANILA</h2>
+            <p>
+              The Viking Party Manila is a one of a kind evening of fun, food, music and dance,
+              arranged by NordCham Philippines in celebration of our Nordic heritage and our
+              Viking roots. The event is a casual party to which anyone is welcome. Come dressed
+              up in your favorite Viking attire or come as you are. Party program includes
+              Viking-themed entertainment from stage, live music, rich servings of great Nordic
+              food and free-flowing beers of highest quality and quantity.
+            </p>
 
-            <div class="viking-row">
-              <div class="viking-col">
-                <h2>PARTY LIKE A VIKING</h2>
-                <p>The Viking Party Manila is a party where everyone participates. Cheer for your country in the Viking Games competition, where teams compete in lifting Thors Hammer, Shield Wall and Beer Drinking. Participate in the endless cheers and sing along with the music! Dance away to our live band, which will be playing all the Nordic hits: Enjoy the great sounds of ABBA, Roxette, Ace Of Base, Europe and many more. And for those ready to rave – our DJ will take down the house on a pulsating dancefloor until midnight.</p>
-              </div>
-              <div class="viking-col">
-                <h2>BRING HOME THE PARTY BOOTY</h2>
-                <p>The Grand Raffle offers everyone a chance to bring home amazing prizes from our long list of sponsors including luxurious vacation treats at exotic locations.</p>
-              </div>
-            </div>
+            <h2>EAT AND DRINK LIKE A VIKING</h2>
+            <p>
+              Indulge in a feast of delicatessen from the Nordic countries! Dusit Hotel, one of
+              the best culinary destinations in Manila, invites everyone to the taste of Nordic
+              Food at an overflowing buffet table. For the real Valhalla experience, Engkanto
+              Brewery is providing free-flowing beer all night long! Engkanto is known to brew
+              one of the best beers in the Philippines. Unlimited beer is included in the Viking
+              Party Pass. A selection of fine Wines and Mixed Drinks will be available at cash
+              bars around the event area.
+            </p>
 
-            <div class="viking-footer">
-              <p><strong>Join us!</strong> This is a party like no other. This is the party where everyone can party like a Viking!</p>
-            </div>
-          </section>
+            <h2>PARTY LIKE A VIKING</h2>
+            <p>
+              The Viking Party Manila is a party where everyone participates. Cheer for your
+              country in the Viking Games competition, where teams compete in lifting Thors
+              Hammer, Shield Wall and Beer Drinking. Participate in the endless cheers and sing
+              along with the music! Dance away to our live band, which will be playing all the
+              Nordic hits: Enjoy the great sounds of ABBA, Roxette, Ace Of Base, Europe and many
+              more. And for those ready to rave – our DJ will take down the house on a pulsating
+              dancefloor until midnight.
+            </p>
 
-          <!-- 3 videos in a row -->
-          <div class="video-row">
-            <div class="video-card">
-              <video controls preload="metadata" poster="">
-                <source src="assets/partyvideos/2022.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="video-card">
-              <video controls preload="metadata" poster="">
-                <source src="assets/partyvideos/2023.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="video-card">
-              <video controls preload="metadata" poster="">
-                <source src="assets/partyvideos/2024.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+            <h2>BRING HOME THE PARTY BOOTY</h2>
+            <p>
+              The Grand Raffle offers everyone a chance to bring home amazing prizes from our
+              long list of sponsors including luxurious vacation treats at exotic locations.
+            </p>
+          </div>
+
+          <div class="buffet-section">
+            <div class="viking-col">
+              <img src="assets/svg/valhalla-buffet-01.svg" alt="Valhalla Buffet" class="buffet-title" />
+              <p>
+                The Viking Party Manila is a culinary highlight with Nordic delicatessen dishes
+                representing the best of the Danish, Finnish, Norwegian and Swedish kitchen. Our
+                Valhalla Buffet is a fully loaded Nordic experience!
+              </p>
+              <img src="assets/png/menu - viking party manila 2025 portrait4.jpg" alt="Valhalla Buffet Menu"
+                class="buffet-menu" />
             </div>
           </div>
         </div>
-      </section>
 
-      <section id="spartan-tickets" class="spartan-hero">
-        <div class="spartan-content">
-          <img
-            src="assets/svg/party pass-01.svg"
-            alt="Tickets Title"
-            class="tickets-title-image"
-          />
-          <div class="spartan-ticket-row">
-            <div class="spartan-ticket-card">
-              <img src="assets/png/regular-pass-presale4.jpg" alt="Pre-sale Ticket" class="ticket-image" />
-              <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank" class="buy-now-btn">Get Now</a>
-            </div>
-            <div class="spartan-ticket-card">
-              <img src="assets/png/premium-pass-presale3.jpg" alt="Ordinary Ticket" class="ticket-image" />
-              <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank" class="buy-now-btn">Get Now</a>
-            </div>
-            <div class="spartan-ticket-card disabled">
-              <img src="assets/png/barkada-pass-stacked.png" alt="VIP Ticket" class="ticket-image" />
-              <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank" class="buy-now-btn">Get Now</a>
-            </div>
-            <div class="spartan-ticket-card disabled">
-              <img src="assets/png/corporate-pass 1.png" alt="VIP Ticket" class="ticket-image" />
-              <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank" class="buy-now-btn">Get Now</a>
-            </div>
+        <div class="viking-footer">
+          <p>
+            <strong>Join us!</strong> This is a party like no other. This is the party where
+            everyone can party like a Viking!
+          </p>
+        </div>
+
+        <!-- 3 videos in a row -->
+        <div class="video-row">
+          <div class="video-card">
+            <video controls preload="metadata" poster="">
+              <source src="assets/partyvideos/2022.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls preload="metadata" poster="">
+              <source src="assets/partyvideos/2023.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="video-card">
+            <video controls preload="metadata" poster="">
+              <source src="assets/partyvideos/2024.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="merchandize" class="merch-section">
-        <img
-          src="assets/merch/merchandise.png"
-          alt="Tickets Title"
-          class="merch-title-image"
-        />
-        <div class="merch-grid">
-          <div class="merch-item">
-            <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank">
-              <img src="assets/merch/viking party - black t-shirt 01 mockup2.png" alt="Viking Helmet" />
-              <h3>Viking T-Shirt 1</h3>
-              <p class="price">₱1,500</p>
+    <section id="the-vikings">
+      <div class="the-vikings-content">
+        <img src="assets/png/the-vikings.png" alt="The Vikings" class="the-vikings-title" />
+
+        <div class="vikings-columns">
+          <div class="vikings-text">
+            <p>
+              Vikings, or Norsemen, refer to seafaring people from what is today the Nordic countries. The Viking Age is
+              commonly referred to as from 793 AD to 1066 AD, during which Vikings had a profound impact on the early
+              medieval history of Europe.
+              Vikings were traders and navigated seas and rivers as far as Constantinople, the Middle East and even what
+              is today America in their iconic long boats. However, the Vikings were perhaps more known for raiding
+              villages and were infamous warriors and conquerors. Former Viking settlements are today important centers
+              of trade, such as London, Dublin and Kiev.
+              The Vikings spoke Norse, similar to today’s Icelandic, and wrote in runes. Until today, rune stones are
+              present in the Nordic countries, telling the tales of our ancestors. The Vikings were pagans and
+              worshipped multiple gods, including the now popularized Odin, Thor and Loki.
+              Today, many old Viking traditions are still a part of life in the modern Nordic countries. At the Viking
+              Party Manila, we celebrate our joint history and cultural ties in a fun and engaging way.
+            </p>
+          </div>
+
+          <div class="vikings-image">
+            <img src="assets/jpg/vecteezy_viking-warrior-with-axe-and-fur-cloak-standing-on-rocky_66811218.jpeg"
+              alt="Viking Celebration" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsorships">
+      <div class="sponsorships-content">
+        <img src="assets/png/sponsorship-opportunities.png" alt="Sponsorship Opportunities"
+          class="sponsorships-title" />
+
+        <div class="sponsorships-text">
+          <p>
+            The Viking Party Manila gathers around 500 guests for an entire evening.
+            Join our Sponsorship program to expose your brand! We offer many ways of
+            integrating branding within our party format and program, in a fun and
+            entertaining way.
+          </p>
+          <p>
+            Talk to
+            <a href="mailto:axel.fries@example.com" class="email-link">
+              <i class="fas fa-envelope"></i> Axel Fries
             </a>
+            about sponsorship opportunities at the Viking Party Manila.
+            Our sponsorship programs are detailed in this
+            <a href="assets/viking party - sponsorship.pdf" target="_blank" download class="pdf-link">
+              <i class="fas fa-file-pdf"></i> brochure
+            </a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="spartan-tickets" class="spartan-hero">
+      <div class="spartan-content">
+        <img src="assets/svg/party pass-01.svg" alt="Tickets Title" class="tickets-title-image" />
+        <div class="spartan-ticket-row">
+          <div class="spartan-ticket-card">
+            <img src="assets/png/regular-pass 1.png" alt="Pre-sale Ticket" class="ticket-image" />
+            <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank"
+              class="buy-now-btn">Get Now</a>
           </div>
-          <div class="merch-item">
-            <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank">
-              <img src="assets/merch/viking party - black t-shirt 02 mockup2.png" alt="Spartan Shield" />
-              <h3>Viking T-Shirt 2</h3>
-              <p class="price">₱1,500</p>
-            </a>
+          <div class="spartan-ticket-card">
+            <img src="assets/png/prime-pass.png" alt="Ordinary Ticket" class="ticket-image" />
+            <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank"
+              class="buy-now-btn">Get Now</a>
           </div>
-          <div class="merch-item">
-            <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank">
-              <img src="assets/merch/viking party - black hoodie mockup2.jpg" alt="Battle Axe" />
-              <h3>Viking Hoodie</h3>
-              <p class="price">₱2,500</p>
-            </a>
+          <div class="spartan-ticket-card">
+            <img src="assets/png/stacked-barkada-pass.png" alt="VIP Ticket" class="ticket-image" />
+            <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank"
+              class="buy-now-btn">Get Now</a>
+          </div>
+          <div class="spartan-ticket-card">
+            <img src="assets/png/stacked-corporate-pass.png" alt="VIP Ticket" class="ticket-image" />
+            <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank"
+              class="buy-now-btn">Get Now</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="sponsors">
-        <div class="content">
-          <!-- Title image -->
-          <img
-            src="assets/svg/our-sponsors.png"
-            alt="Our Sponsors"
-            class="sponsor-title-image"
-          />
+    <section id="merchandize" class="merch-section">
+      <img src="assets/merch/merchandise.png" alt="Tickets Title" class="merch-title-image" />
+      <div class="merch-grid">
+        <div class="merch-item">
+          <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank">
+            <img src="assets/merch/viking party - black t-shirt 01 mockup2.png" alt="Viking Helmet" />
+            <h3>Viking T-Shirt 1</h3>
+            <p class="price">₱1,500</p>
+          </a>
+        </div>
+        <div class="merch-item">
+          <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank">
+            <img src="assets/merch/viking party - black t-shirt 02 mockup2.png" alt="Spartan Shield" />
+            <h3>Viking T-Shirt 2</h3>
+            <p class="price">₱1,500</p>
+          </a>
+        </div>
+        <div class="merch-item">
+          <a href="https://vikingpartymanila.yapsody.com/event/book/851111/31761591" target="_blank">
+            <img src="assets/merch/viking party - black hoodie mockup2.jpg" alt="Battle Axe" />
+            <h3>Viking Hoodie</h3>
+            <p class="price">₱2,500</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
-          <div class="sponsor-logos">
-            <div class="sponsor-logo-box">
-              <img src="assets/sponsors/bdo-white.png" alt="BDO Unibank (Mug Sponsor)">
-            </div>
-            <div class="sponsor-logo-box">
-              <img src="assets/sponsors/dusit-thani-manila-white.png" alt="Dusit Thani Manila (Venue Partner)">
-            </div>
-            <div class="sponsor-logo-box">
-              <img src="assets/sponsors/engkanto-brewery.png" alt="Engkanto Brewery (Beer Sponsor)">
-            </div>
-            <div class="sponsor-logo-box">
-              <img src="assets/sponsors/TORM_logo-removebg-preview.png" alt="Engkanto Brewery (Beer Sponsor)">
-            </div>
+    <section id="sponsors">
+      <div class="content">
+        <!-- Title image -->
+        <img src="assets/svg/our-sponsors.png" alt="Our Sponsors" class="sponsor-title-image" />
+
+        <div class="sponsor-logos">
+          <div class="sponsor-logo-box">
+            <img src="assets/png/BDO-Unibank-(Mug-Sponsor).png" alt="BDO Unibank (Mug Sponsor)">
           </div>
-          <br/>
-          <div class="sponsor-logos">
-            <div class="sponsor-logo-box">
-              <img src="assets/sponsors/the-wine-club-white.png" alt="The Wine Club (Wine Sponsor)">
-            </div>
-            <div class="sponsor-logo-box">
-              <img src="assets/sponsors/retail-associates-logo-v5.png" alt="Retail Associates">
-            </div>
-            <div class="sponsor-logo-box">
-              <img src="assets/sponsors/pmftc.png" alt="Retail Associates">
-            </div>
+          <div class="sponsor-logo-box">
+            <img src="assets/sponsors/dusit-thani-manila-white.png" alt="Dusit Thani Manila (Venue Partner)">
+          </div>
+          <div class="sponsor-logo-box">
+            <img src="assets/sponsors/engkanto-brewery.png" alt="Engkanto Brewery (Beer Sponsor)">
+          </div>
+          <div class="sponsor-logo-box">
+            <img src="assets/sponsors/retail-associates-logo-v5.png" alt="Retail Associates">
           </div>
         </div>
-      </section>
-      <!-- <section id="page-9" class="hero mockup">
+        <br />
+        <div class="sponsor-logos">
+          <div class="sponsor-logo-box">
+            <img src="assets/sponsors/Asia Divers (Raffle Sponsor-Major).png" alt="BDO Unibank (Mug Sponsor)">
+          </div>
+          <div class="sponsor-logo-box">
+            <img src="assets/sponsors/Jabra (Raffle Sponsor-Minor).png" alt="Dusit Thani Manila (Venue Partner)">
+          </div>
+          <div class="sponsor-logo-box">
+            <img src="assets/sponsors/CGI (Platinum Sponsor).png" alt="Engkanto Brewery (Beer Sponsor)">
+          </div>
+          <div class="sponsor-logo-box">
+            <img src="assets/sponsors/Swebest (Raffle Sponsor-Minor).png" alt="Retail Associates">
+          </div>
+        </div>
+        <br />
+        <div class="sponsor-logos">
+          <div class="sponsor-logo-box">
+            <img src="assets/png/torm-white.png" alt="Engkanto Brewery (Beer Sponsor)">
+          </div>
+          <div class="sponsor-logo-box">
+            <img src="assets/sponsors/the-wine-club-white.png" alt="The Wine Club (Wine Sponsor)">
+          </div>
+          <div class="sponsor-logo-box">
+            <img src="assets/png/pmftc-white.png" alt="Retail Associates">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="page-9" class="hero mockup">
         <div class="content">
           <h2>Page 9</h2>
         </div>
@@ -274,71 +399,140 @@
         </div>
       </section> -->
 
-      <section id="contactus">
-        <div class="about-contact-container">
-          <div class="about-section">
-            <div class="about-title-wrapper">
-              <img src="assets/png/about-us.png" alt="Contact Us" class="about-title-img">
-            </div>
-            <p><strong>NORDCHAM PHILIPPINES</strong></p>
-            <p>Established in 2012, the Nordic Chamber of Commerce of the Philippines (NordCham Philippines) connects the Nordic-Philippine business community and promotes trade, industry, and investment between the Philippines and the Nordic countries (Denmark, Finland, Iceland, Norway, and Sweden).</p>
-            <p>As the largest Nordic chamber in Asia with 130+ members, NordCham drives sustainability and supports diverse industries such as ICT, clean technologies, maritime, healthcare, and financial services through events, networking, and consulting services.</p>
-            <p>Key activities include the Sustainability Committee Meeting, Nordic Sustainability Awards, Innovation Exchange, and the Viking Party Manila, which celebrates Nordic heritage in a fun and engaging way.</p>
-            <p>The VIKING PARTY MANILA is arranged by NordCham Philippines as a tribute to our common Viking Heritage and a fun way to celebrate our Nordic roots.</p>
-            <p>More information about NordCham Philippines on <a href="https://nordcham.com.ph/" target="_blank">Nordic Chamber of Commerce of the Philippines</a>.</p>
+    <section id="contactus">
+      <div class="about-contact-container">
+        <div class="about-section">
+          <div class="about-title-wrapper">
+            <img src="assets/png/about-us.png" alt="Contact Us" class="about-title-img">
           </div>
-
-          <div class="about-contact-separator"></div>
-
-          <div class="contact-section">
-            <div class="contact-title-wrapper">
-              <img src="assets/png/contact-us.png" alt="Contact Us" class="contact-title-img">
-            </div>
-            <div class="contact-info">
-              <p><strong>Nordic Chamber of Commerce of the Philippines, Inc.</strong></p>
-              <p>7/F Unit B, 8 Rockwell, Rockwell Drive, Rockwell Center, Makati City, Philippines 1200</p>
-
-              <p><strong>Email Us:</strong></p>
-              <p>Axel Fries<br>
-              Executive Director<br>
-              <a href="mailto:axel.fries@nordcham.com.ph">axel.fries@nordcham.com.ph</a></p>
-
-              <p>Maan Yu<br>
-              Business Partnerships and Events Manager<br>
-              <a href="mailto:maan.yu@nordcham.com.ph">maan.yu@nordcham.com.ph</a></p>
-
-              <p><strong>Phone:</strong> +63 286837473</p>
-            </div>
+          <div class="about-us">
+            <p><strong>NORDCHAM PHILIPPINES</strong></p>
+            <p>Established in 2012, the Nordic Chamber of Commerce of the Philippines (NordCham Philippines) connects
+              the Nordic-Philippine business community and promotes trade, industry, and investment between the
+              Philippines and the Nordic countries (Denmark, Finland, Iceland, Norway, and Sweden).</p>
+            <p>As the largest Nordic chamber in Asia with 130+ members, NordCham drives sustainability and supports
+              diverse industries such as ICT, clean technologies, maritime, healthcare, and financial services through
+              events, networking, and consulting services.</p>
+            <p>Key activities include the Sustainability Committee Meeting, Nordic Sustainability Awards, Innovation
+              Exchange, and the Viking Party Manila, which celebrates Nordic heritage in a fun and engaging way.</p>
+            <p>The VIKING PARTY MANILA is arranged by NordCham Philippines as a tribute to our common Viking Heritage
+              and a fun way to celebrate our Nordic roots.</p>
+            <p>More information about NordCham Philippines on <a href="https://nordcham.com.ph/" target="_blank">Nordic
+                Chamber of Commerce of the Philippines</a>.</p>
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <div class="footer-content">
-        <span><strong>WEB DESIGN BY</strong></span>
-        <a href="https://retail-associates.com/" target="_blank" rel="noopener">
-          <img src="assets/png/retail-associates-logo-v5.png" alt="RSA Logo" class="footer-logo" />
-        </a>
+        <div class="about-contact-separator"></div>
+
+        <div class="contact-section">
+          <div class="contact-title-wrapper">
+            <img src="assets/png/contact-us.png" alt="Contact Us" class="contact-title-img">
+          </div>
+          <div class="contact-info">
+            <p><strong>Nordic Chamber of Commerce of the Philippines, Inc.</strong></p>
+            <p>7/F Unit B, 8 Rockwell, Rockwell Drive, Rockwell Center, Makati City, Philippines 1200</p>
+
+            <p><strong>Email Us:</strong></p>
+            <p>Axel Fries<br>
+              Executive Director<br>
+              <a href="mailto:axel.fries@nordcham.com.ph">axel.fries@nordcham.com.ph</a>
+            </p>
+
+            <p>Maan Yu<br>
+              Business Partnerships and Events Manager<br>
+              <a href="mailto:maan.yu@nordcham.com.ph">maan.yu@nordcham.com.ph</a>
+            </p>
+
+            <p><strong>Phone:</strong> +63 286837473</p>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script>
-      const menuButton = document.getElementById('menu-button');
-      const sideMenu = document.getElementById('spartan-side-menu');
-      const navLinks = sideMenu.querySelectorAll('a');
+  <footer class="site-footer">
+    <div class="footer-content">
+      <span><strong>WEB DESIGN BY</strong></span>
+      <a href="https://retail-associates.com/" target="_blank" rel="noopener">
+        <img src="assets/png/retail-associates-logo-v5.png" alt="RSA Logo" class="footer-logo" />
+      </a>
+    </div>
+  </footer>
 
-      menuButton.addEventListener('click', () => {
-        sideMenu.classList.toggle('open');
-        menuButton.classList.toggle('active', sideMenu.classList.contains('open'));
+  <script>
+    const menuButton = document.getElementById('menu-button');
+    const sideMenu = document.getElementById('spartan-side-menu');
+    const navLinks = sideMenu.querySelectorAll('a');
+
+    menuButton.addEventListener('click', () => {
+      sideMenu.classList.toggle('open');
+      menuButton.classList.toggle('active', sideMenu.classList.contains('open'));
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        sideMenu.classList.remove('open');
+        menuButton.classList.remove('active');
+      });
+    });
+
+    const carousel = document.getElementById("carousel-track");
+    const images = carousel.querySelectorAll("img");
+    const prevBtn = document.querySelector(".row-carousel-btn.prev");
+    const nextBtn = document.querySelector(".row-carousel-btn.next");
+
+    // Start from center image
+    let currentIndex = Math.floor(images.length / 2);
+
+    function updateCarousel() {
+      images.forEach((img, i) => {
+        img.classList.remove("active");
       });
 
-      navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          sideMenu.classList.remove('open');
-          menuButton.classList.remove('active');
-        });
-      });
-    </script>
-  </body>
+      images[currentIndex].classList.add("active");
+
+      // Scroll the carousel to center the focused image
+      const scrollX =
+        images[currentIndex].offsetLeft -
+        carousel.offsetWidth / 2 +
+        images[currentIndex].offsetWidth / 2;
+
+      carousel.scrollTo({ left: scrollX, behavior: "smooth" });
+    }
+
+    function showNext() {
+      currentIndex = (currentIndex + 1) % images.length;
+      updateCarousel();
+    }
+
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      updateCarousel();
+    }
+
+    nextBtn.addEventListener("click", () => {
+      showNext();
+      resetAutoSlide();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      showPrev();
+      resetAutoSlide();
+    });
+
+    // Auto-slide every 5 seconds
+    let autoSlideInterval = setInterval(showNext, 5000);
+
+    function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(showNext, 5000);
+    }
+
+    // Initialize on load
+    window.addEventListener("load", () => {
+      updateCarousel();
+    });
+  </script>
+</body>
+
 </html>

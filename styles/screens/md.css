@@ -94,4 +94,27 @@
         padding-left: 1em;
         padding-right: 1em;
     }
+
+    .vikings-columns {
+        grid-template-columns: 1fr; /* single column */
+        gap: 1.5rem; /* smaller gap for mobile */
+    }
+
+    /* Move image below text */
+    .vikings-image {
+        order: 2;
+    }
+
+    .vikings-text {
+        order: 1;
+    }
+    
+    .vikings-party-section {
+        grid-template-columns: 1fr; /* single column */
+        gap: 1.5rem; /* smaller gap for mobile */
+    }
+
+    .buffet-section {
+        order: 2;
+    }
 }
