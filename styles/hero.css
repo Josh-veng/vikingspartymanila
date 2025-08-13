@@ -80,6 +80,30 @@
   display: block;
 }
 
+#sponsors h2 {
+  font-weight: bolder;
+  font-size: 28px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: inline-block;
+  color: #b30000; /* Deep red */
+  border-bottom: 3px solid #b30000;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px black;
+}
+
+#sponsors h2:hover {
+  text-shadow: 0 0 10px #ff0000;
+}
+
+.sponsor-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* space between the two blocks */
+  flex-wrap: wrap; /* makes them stack on small screens */
+}
+
 .sponsor-logos {
   display: flex;
   justify-content: center;
@@ -89,7 +113,7 @@
 }
 
 .sponsor-logo-box {
-  width: 240px;
+  width: 300px;
   height: 180px;
   display: flex;
   justify-content: center;
@@ -97,9 +121,20 @@
   background-color: rgba(255, 255, 255, 0.05); /* Optional subtle bg */
   border-radius: 8px;
   overflow: hidden;
+  cursor: pointer;
+  padding: 0 1rem 0 1rem;
 }
 
-.sponsor-logo-box img {
+.sponsor-logo-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.sponsor-logo-box a img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -124,11 +159,26 @@
   margin-top: 8rem;
 }
 
+.spartan-content {
+  max-width: 1100px;   /* controls width */
+  margin: 0 auto;      /* centers horizontally */
+  text-align: center;
+  padding: 0 1rem 0 1rem;
+}
+
+.spartan-content p {
+  text-align: justify;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #ececec;
+}
+
 .spartan-ticket-row {
   display: flex;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 4rem;
 }
 
 .spartan-ticket-card {
@@ -531,6 +581,29 @@
   display: block;
 }
 
+.merchandize-content {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.merchandize-content p {
+  text-align: justify;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+}
+
+.merchandize-content p a {
+  color: #b30000; /* Viking red */
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.merchandize-content p a:hover {
+  color: #e60000;
+  text-shadow: 0 0 5px rgba(179, 0, 0, 0.6);
+}
+
 .merch-grid {
   display: flex;
   justify-content: center;
@@ -786,6 +859,38 @@
   text-align: center;
 }
 
+.sponsorships-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 7px;
+  color: red;
+  text-align: left;
+}
+
+.sponsorships-text h3 {
+  font-size: 1.1rem;
+  margin: 2rem 0 4px 0;
+  text-transform: uppercase;
+  color: red;
+  text-align: left;
+}
+
+.sponsorships-text ul {
+  margin: 0 0 2rem 2rem;
+}
+
+.sponsorships-text ul {
+  margin-left: 2rem;
+}
+
+.sponsorships-text li::marker {
+  color: red; /* bullet color */
+  font-size: 1.2em; /* optional size */
+}
+
+.sponsorships-text li strong {
+  color: red;
+}
+
 .sponsorships-text {
   text-align: justify;
   line-height: 1.6;
@@ -801,8 +906,7 @@
 }
 
 .email-link i {
-  margin-left: 7px;
-  margin-right: 3px;
+  margin-left: 5px;
   color: #ff4444;
 }
 
@@ -811,8 +915,7 @@
 }
 
 .pdf-link i {
-  margin-left: 7px;
-  margin-right: 3px;
+  margin-left: 5px;
   color: #ff9900;
 }
 
@@ -820,4 +923,43 @@
 .pdf-link:hover {
   opacity: 0.8;
 }
+
+/* Valhalla BUffet Style */
+
+#valhalla-buffet {
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Cinzel', serif; /* Optional: Use Google Fonts */
+  margin-top: 5rem;
+}
+
+.valhalla-buffet-title-image {
+  max-width: 346px; /* Adjust width as needed */
+  width: 100%;
+  height: auto;
+  margin: 0 auto 68px auto; /* center + spacing below */
+  display: block;
+}
+
+.valhalla-buffet-content {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.valhalla-buffet-content p {
+  text-align: justify;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.valhalla-buffet-content .buffet-menu {
+  width: 100%;       /* make it fill the parent div */
+  height: auto;      /* keep aspect ratio */
+  max-width: 800px;  /* optional: limit maximum size */
+  display: block;    /* remove inline spacing */
+  margin: 0 auto; 
+}
+
 
