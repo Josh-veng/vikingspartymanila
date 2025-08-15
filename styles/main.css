@@ -59,7 +59,7 @@ main {
     opacity: 0;
     place-items: center;
     transition: all 5ms;
-    animation: splash 10s ease-in-out;
+    animation: splash .5s ease-in-out;
 }
 
 .splash img {
